@@ -6,6 +6,7 @@ import Register from "./pages/auth/register";
 import { Provider } from "react-redux";
 import { persistor, store } from "./redux/store";
 import { PersistGate } from "redux-persist/integration/react";
+import ItemDetail from "./pages/detail-item";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/home" element={<Home />} />
-          
+            <Route path="/item-detail/:id" element={<ItemDetail />} />
           </Routes>
         </BrowserRouter>
 
